@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "ICP_Aneesh_backend": {
+      "main": "src/ICP_Aneesh_backend/main.mo",
+      "type": "motoko"
+    },
+    "ICP_Aneesh_frontend": {
+      "dependencies": [
+        "ICP_Aneesh_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/ICP_Aneesh_frontend/src/index.html"
+      },
+      "source": [
+        "src/ICP_Aneesh_frontend/assets",
+        "dist/ICP_Aneesh_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
